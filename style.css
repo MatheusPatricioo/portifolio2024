@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f5;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* centralizar oq for colocado */
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* Container dos links de navegação */
+.navbar .nav-links {
+    margin-left: 6%;
+    display: flex; 
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 24px;
+    margin-right: auto;
+}
+
+.navbar a { 
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.navbar .social-icons {
+    margin-left: auto; /* Ícones sociais à direita */
+}
+
+.navbar .social-icons a {
+    margin: 0 5px;
+    color: #000;
+}
+
+
+.hero {
+    background: url('https://storage.googleapis.com/a1aa/image/XenKPaeymeC56JJz9IH5p2JyQ5dKf718lNaiefRZBmbSkLG5E.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero .hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero .hero-text button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero .hero-text button:hover {
+    background-color: #007bff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.features {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features .feature {
+    display: inline-block;
+    width: 22%;
+    margin: 0 1%;
+    vertical-align: top;
+}
+
+.features .feature i {
+    font-size: 48px;
+    color: #000;
+}
+
+.features .feature h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.features .feature p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adiciona espaçamento entre os blocos */
+}
+
+.service {
+    background-color: #e8eded;
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 40px); /* Ajusta o tamanho e espaçamento */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services-carousel .service {
+    background-color: #e8eded;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 10px;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service img {
+    max-width: 80px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service h3 {
+    margin: 10px 0;
+}
+
+.service p {
+    color: #666;
+    font-size: 14px;
+}
+
+.slick-slide {
+    margin: 0 15px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer .social-icons a:hover {
+    color: #007bff;
+}
+
