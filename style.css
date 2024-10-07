@@ -6,18 +6,22 @@ body {
 }
 
 .navbar {
-    background-color: #f8f9fa;
+    background-color: transparent; /* Alterado para transparente */
     padding: 10px 20px;
     display: flex;
-    justify-content: center; /* centralizar oq for colocado */
+    justify-content: center;
     align-items: center;
-    position: relative;
-    margin: 0 auto;
+    position: absolute; /* Coloca a navbar sobre o fundo */
+    top: 0; /* Garante que está no topo */
+    width: 90%; /* Preenche a largura completa */
+    z-index: 1000; /* Garante que fique acima do conteúdo */
 }
+
 
 /* Container dos links de navegação */
 .navbar .nav-links {
-    margin-left: 6%;
+     margin-left: 90%;
+    /* margin-right: 90%; */
     display: flex; 
 }
 
@@ -32,6 +36,7 @@ body {
     font-weight: 700;
     font-size: 24px;
     margin-right: auto;
+    color: #fff;
 }
 
 .navbar a { 
@@ -44,16 +49,6 @@ body {
 .navbar a:hover {
     color: #007bff;
 }
-
-.navbar .social-icons {
-    margin-left: auto; /* Ícones sociais à direita */
-}
-
-.navbar .social-icons a {
-    margin: 0 5px;
-    color: #000;
-}
-
 
 .hero {
     background: url('https://storage.googleapis.com/a1aa/image/XenKPaeymeC56JJz9IH5p2JyQ5dKf718lNaiefRZBmbSkLG5E.jpg') no-repeat center center;
@@ -69,7 +64,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: rgb(10, 10, 10);
 }
 
 .hero .hero-text h1 {
