@@ -2,7 +2,7 @@
 
 Bem-vindo ao meu portfólio pessoal! Este projeto apresenta minhas habilidades e experiências como desenvolvedor Fullstack. Ele inclui informações sobre minha formação, os serviços que ofereço e links para meus projetos.
 
-![Profile Picture](file2)
+![Profile Picture](file2.png)
 
 ## Índice
 
