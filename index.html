@@ -8,60 +8,41 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="navbar">
-        <div class="logo">
-
-        </div>
+        <div class="logo"></div>
         <div class="nav-links">
             <a href="#" onclick="scrollToSection('top')">Home</a>
             <a href="#" onclick="toggleAbout()">About</a>
             <a href="#" onclick="scrollToSection('offer')">Skills</a>
-            <a href="https://github.com/MatheusPatricioo?tab=overview&from=2024-10-01&to=2024-10-04"
-                target="_blank">Projects</a>
+            <a href="https://github.com/MatheusPatricioo?tab=overview&from=2024-10-01&to=2024-10-04" target="_blank">Projects</a>
             <a href="mailto:teste@gmail.com">Contact</a>
         </div>
-        <!-- <div class="social-icons">
-            <a href="https://wa.me/31995461381" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="mailto:matheuspatricio.aspx@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </div> -->
     </div>
 
     <div id="top" class="hero">
         <div class="hero-text">
             <h1 id="typed-text"></h1>
             <p>Fullstack Developer | PHP & Laravel Expert | React Enthusiast</p>
-            <button onclick="window.location.href='https://github.com/MatheusPatricioo?tab=repositories'">See My
-                Work</button>
+            <button onclick="window.location.href='https://github.com/MatheusPatricioo?tab=repositories'">See My Work</button>
         </div>
     </div>
 
     <!-- Seção sobre mim -->
-
     <div class="about-me">
         <div class="profile-pic-container">
             <img src="img/file.png" alt="Profile Picture" class="profile-pic">
         </div>
-        <div class="about-text">
-            <h2>Sobre Mim</h2>
-            <p>Olá, eu sou Matheus Patricio, desenvolvedor fullstack apaixonado por criar soluções inovadoras e
-                eficientes. Tenho experiência em diversas tecnologias, incluindo HTML, CSS, JavaScript, React, PHP, e
-                Laravel, e estou cursando Engenharia de Computação no CEFET-MG. No meu tempo livre, gosto de explorar
-                novos desafios de programação.</p>
+        <div class="about-text" id="about-section" style="display:none;">
+            <h2 id="about-title"></h2>
+            <p id="about-description"></p>
         </div>
     </div>
-
-
-
-
 
     <div id="offer" class="container">
         <h1>What I Offer</h1>
@@ -69,8 +50,7 @@
             <div class="service">
                 <img src="img/front.png" alt="Icon representing Web Development">
                 <h3>Web Development</h3>
-                <p>I create responsive websites using HTML, CSS, JavaScript, and React, ensuring smooth user experience
-                    and modern design.</p>
+                <p>I create responsive websites using HTML, CSS, JavaScript, and React, ensuring smooth user experience and modern design.</p>
             </div>
             <div class="service">
                 <img src="img/web.png" alt="Icon representing Backend Development">
@@ -80,8 +60,7 @@
             <div class="service">
                 <img src="img/full.png" alt="Icon representing Fullstack Development">
                 <h3>Fullstack Solutions</h3>
-                <p>With expertise in both frontend and backend technologies, I build full-stack web solutions tailored
-                    to client needs.</p>
+                <p>With expertise in both frontend and backend technologies, I build full-stack web solutions tailored to client needs.</p>
             </div>
         </div>
     </div>
@@ -96,10 +75,8 @@
         <p>&copy; 2024 Matheus Patricio. All Rights Reserved.</p>
     </footer>
 
-    <!-- Conectando ao arquivo JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="script.js"></script>
 </body>
 

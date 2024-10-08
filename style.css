@@ -253,6 +253,8 @@ footer .social-icons a:hover {
     font-size: 16px;
     color: #555;
     line-height: 1.6;
+    min-height: 120px; /* Define uma altura mínima para o parágrafo */
+    margin-top: 10px;
 }
 
 
