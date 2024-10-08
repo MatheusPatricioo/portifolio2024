@@ -51,7 +51,7 @@ body {
 }
 
 .hero {
-    background: url('https://storage.googleapis.com/a1aa/image/XenKPaeymeC56JJz9IH5p2JyQ5dKf718lNaiefRZBmbSkLG5E.jpg') no-repeat center center;
+    background: url('img/1.png') no-repeat center center;
     background-attachment: fixed;
     background-size: cover;
     height: 500px;
