@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (descIndex < descriptionText.length) {
                 aboutDescription.innerHTML += descriptionText.charAt(descIndex);
                 descIndex++;
-                setTimeout(typeDescription, 50);
+                setTimeout(typeDescription, 30);
             }
         }
 
