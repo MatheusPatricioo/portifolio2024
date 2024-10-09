@@ -1,7 +1,4 @@
-// Função para rolar até a seção desejada
-function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-}
+
 
 // Função para o efeito de digitação no texto de boas-vindas
 document.addEventListener('DOMContentLoaded', function () {
@@ -62,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
             slidesToShow: 2,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 2000,
             dots: true,
             arrows: true
         });
