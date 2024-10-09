@@ -134,7 +134,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 140px; /* Maior espaçamento para evitar sobreposição */
+    padding-top: 28px; /* Maior espaçamento para evitar sobreposição */
     min-height: 100vh;
 }
 
@@ -249,3 +249,44 @@ footer p {
     font-size: 0.9em;
     margin: 0;
 }
+
+/* Estilos para o background da página de contato */
+
+.hero {
+    background: url('../img/1.png') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(10, 10, 10);
+}
+
+.hero .hero-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero .hero-text p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Remove a margem entre a seção e a foto */
+#background-section {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#foto {
+    margin-top: 0;
+}
+

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (index < welcomeText.length) {
             typedText.innerHTML += welcomeText.charAt(index);
             index++;
-            setTimeout(typeEffect, 100);
+            setTimeout(typeEffect, 75);
         } else {
             // Inicia o efeito de digitação no About Me após a conclusão
             revealAboutSection();
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (titleIndex < titleText.length) {
                 aboutTitle.innerHTML += titleText.charAt(titleIndex);
                 titleIndex++;
-                setTimeout(typeTitle, 100);
+                setTimeout(typeTitle, 20);
             } else {
                 typeDescription(); // Inicia o efeito de digitação no parágrafo após o título
             }
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (descIndex < descriptionText.length) {
                 aboutDescription.innerHTML += descriptionText.charAt(descIndex);
                 descIndex++;
-                setTimeout(typeDescription, 30); //ajuste de veloci.
+                setTimeout(typeDescription, 18); //ajuste de veloci.
             }
         }
 
@@ -67,4 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
             arrows: true
         });
     });
+    
 });
+
