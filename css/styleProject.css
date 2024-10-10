@@ -1,0 +1,313 @@
+@media (max-width: 768px) {
+    .category-item {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-item {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f5;
+    padding: 0;
+}
+.navbar {
+    background-color: transparent; /* Alterado para transparente */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Coloca a navbar sobre o fundo */
+    top: 0; /* Garante que está no topo */
+    width: 90%; /* Preenche a largura completa */
+    z-index: 1000; /* Garante que fique acima do conteúdo */
+}
+
+.navbar .nav-links {
+    margin-left: 90%;
+   /* margin-right: 90%; */
+   display: flex; 
+}
+
+.navbar .nav-links a {
+   text-decoration: none;
+   color: #000;
+   margin: 0 15px;
+   font-weight: 500;
+}
+
+.navbar .logo {
+   font-weight: 700;
+   font-size: 24px;
+   margin-right: auto;
+   color: #fff;
+}
+
+.navbar a { 
+   text-decoration: none;
+   color: #000;
+   margin: 0 15px;
+   font-weight: 500;
+}
+
+.navbar a:hover {
+   color: #007bff;
+}
+
+
+/* Header */
+.header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .logo span {
+    color: #f39c12;
+}
+
+.header .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header .nav li {
+    margin-left: 20px;
+}
+
+.header .nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.header .nav li a:hover {
+    color: #f39c12;
+}
+
+.header .social-icons {
+    display: flex;
+}
+
+.header .social-icons a {
+    color: #333;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.header .social-icons a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('../img/1.png') no-repeat center center;
+    background-size: cover;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 10px 0 30px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e67e22;
+}
+
+/* Categories Section */
+.categories {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.categories h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Carousel Section */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: nowrap; /* Mantém os itens na mesma linha */
+    overflow: hidden; /* Evita que os itens saiam dos limites do carrossel */
+}
+
+.carousel-item {
+    width: 200px; /* Define uma largura fixa */
+    height: 200px; /* Define uma altura fixa igual à largura, criando um quadrado */
+    margin-right: 20px; /* Espaçamento entre as caixas */
+    overflow: hidden; /* Evita que o conteúdo saia da caixa */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efeito de sombra */
+    border-radius: 8px; /* Arredonda os cantos */
+    background-color: #fff; /* Fundo branco */
+}
+
+.carousel-item img {
+    width: 100%; /* Faz com que a imagem preencha a caixa */
+    height: 100%; /* Faz com que a imagem preencha a altura da caixa */
+    object-fit: cover; /* Evita esticar a imagem, cortando se necessário para preencher */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+}
+
+.slick-list {
+    overflow: visible; /* Garante que os itens não sejam cortados */
+}
+
+.category-carousel .category-item {
+    margin: 0 10px; /* Adiciona espaçamento lateral entre os itens */
+    box-sizing: border-box; /* Garante que o padding e borda não alterem a largura do item */
+}
+
+/* Posts Section */
+.posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.post-item {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.post-item img {
+    width: 100%;
+    height: auto;
+}
+
+.post-item .post-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.post-item h3 {
+    font-size: 18px;
+    padding: 10px;
+    color: #333;
+}
+
+.post-item p {
+    font-size: 14px;
+    padding: 0 10px 10px;
+    color: #555;
+}
+
+.post-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Ajustes para a proporção desejada */
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px; /* Ajuste conforme necessário */
+    height: 200px; /* Ajuste conforme necessário */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.category-item img {
+    width: 100%;
+    height: 100%; /* Assegura que a imagem preencha o espaço */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+}
+
+/* Ajustes para os slides do slick */
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* O mesmo que a categoria-item */
+    height: 200px; /* O mesmo que a categoria-item */
+}
+
+/* Ajuste nos slides do slick para garantir o tamanho correto */
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Tamanho correto para os slides */
+    height: 150px;
+}
+
+.category-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}

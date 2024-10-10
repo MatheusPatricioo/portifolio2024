@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Blog</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleProject.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo"></div>
+            <div class="nav-links">
+                <a href="#" onclick="scrollToSection('top')">Home</a>
+                <!-- <a href="#" onclick="toggleAbout()">About</a> -->
+                <a href="#" onclick="scrollToSection('offer')">Skills</a>
+                <a href="projects.html" target="_blank">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to my world</h1>
+        <p>Dive in, explore, and lets connect over the things that inspire us most!</p>
+
+    </div>
+
+    <div class="categories">
+        <h2>Posts Categories</h2>
+        <div class="category-carousel">
+            <div class="category-item">
+                <img src="https://storage.googleapis.com/a1aa/image/EcDACsfuYmzxbCDwmptmAYKHMgI88hOSuVVlfN8vM8ux7WlTA.jpg" alt="Business category image" width="150" height="100">
+                <p>Business<br>3 Posts</p>
+            </div>
+            <div class="category-item">
+                <img src="https://storage.googleapis.com/a1aa/image/tCRGBWw0fEylISfdSIDBBLC7YGdZBGzU79vWEkCDKgll7WlTA.jpg" alt="Featured Posts category image" width="150" height="100">
+                <p>Featured Posts<br>3 Posts</p>
+            </div>
+            <div class="category-item">
+                <img src="https://storage.googleapis.com/a1aa/image/VDnGtyBrr4rdLBFlfPDl3QOeDLne4js1d2YJdeJyOcfJd3qcC.jpg" alt="Gallery category image" width="150" height="100">
+                <p>Gallery<br>5 Posts</p>
+            </div>
+            <div class="category-item">
+                <img src="https://storage.googleapis.com/a1aa/image/MkbjjQXhu1YgERHKFc1ftfkBLegQRdr3L3RvXgvdEDFY3tKnA.jpg" alt="Lifestyle category image" width="150" height="100">
+                <p>Lifestyle<br>7 Posts</p>
+            </div>
+            <div class="category-item">
+                <img src="https://storage.googleapis.com/a1aa/image/L8d8CvnRrIabLFBAeFGcV8XftemFKQVafTGdBf9x2jaFd3qcC.jpg" alt="Projects category image" width="150" height="100">
+                <p>Projects<br>4 Posts</p>
+            </div>
+            <div class="category-item">
+                <img src="https://storage.googleapis.com/a1aa/image/jH0JN8QqvKqmHVQAb9xEKwfnegHbc0kTzKhk73d7iD7u7WlTA.jpg" alt="Travel category image" width="150" height="100">
+                <p>Travel<br>4 Posts</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="posts">
+        <div class="post-item">
+            <img src="https://storage.googleapis.com/a1aa/image/mkfp8DYZjP3SP6YuyxWpjEJmcpgheexPXDU4etgMBShfd3qcC.jpg" alt="Post image 1" width="300" height="200">
+            <div class="post-info">
+                <span class="read-time">texto</span>
+                <span class="date">texto</span>
+            </div>
+            <h3>Creativity is allowing yourself to make mistakes. update</h3>
+            <p>By Ademo</p>
+        </div>
+
+        <div class="post-item">
+            <img src="https://storage.googleapis.com/a1aa/image/aCMyXWVyly6UIZqzIgGNVeeCbzhsj5O04gRvCt7lfnDP3tKnA.jpg" alt="Post image 2" width="300" height="200">
+            <div class="post-info">
+                <span class="read-time">3 min read</span>
+                <span class="date">February 10, 2023</span>
+            </div>
+            <h3>Design is so simple. That's why it's so complicated. update</h3>
+            <p>By Ademo</p>
+        </div>
+
+        <div class="post-item">
+            <img src="https://storage.googleapis.com/a1aa/image/2Y0wyO6zeVzcFKK49QjtET892Y0j5BMz7TfMeGtMK0oX3tKnA.jpg" alt="Post image 3" width="300" height="200">
+            <div class="post-info">
+                <span class="read-time">3 min read</span>
+                <span class="date">May 7, 2022</span>
+            </div>
+            <h3>Everything is designed. Few things are designed well</h3>
+            <p>By Ademo</p>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Slick Carousel Initialization -->
+    <script>
+       $(document).ready(function(){
+    $('.category-carousel').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        dots: true,
+        centerMode: true, // Garante que os itens sejam centrados
+        centerPadding: '20px', // Espaçamento entre as caixas
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    centerPadding: '10px', // Espaçamento reduzido em telas menores
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerPadding: '5px', // Espaçamento ainda menor para telas muito pequenas
+                }
+            }
+        ]
+    });
+});
+
+    </script>
+</body>
+</html>

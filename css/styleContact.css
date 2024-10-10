@@ -1,9 +1,9 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f5;
     padding: 0;
-    background-color: #f4f4f4; /* Corrigindo cor de fundo */
     color: #333;
 }
 
@@ -80,13 +80,23 @@ nav ul li a {
     font-size: 1.1em;
 }
 
-/* Container dos links de navegação */
+.navbar {
+    background-color: transparent; /* Alterado para transparente */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; /* Coloca a navbar sobre o fundo */
+    top: 0; /* Garante que está no topo */
+    width: 90%; /* Preenche a largura completa */
+    z-index: 1000; /* Garante que fique acima do conteúdo */
+}
+
+
 .navbar .nav-links {
-    margin-left: 85%;
-    margin-top: 2%;
+    margin-left: 90%;
    /* margin-right: 90%; */
    display: flex; 
-   position: fixed;
 }
 
 .navbar .nav-links a {
@@ -206,21 +216,6 @@ h1 {
     background-color: #f0f0f0;
     border-color: #ccc;
 }
-
-.navbar {
-    background-color: transparent; /* Alterado para transparente */
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute; /* Coloca a navbar sobre o fundo */
-    top: 0; /* Garante que está no topo */
-    width: 90%; /* Preenche a largura completa */
-    z-index: 1000; /* Garante que fique acima do conteúdo */
-}
-
-
-
 
 /* Footer */
 footer {
