@@ -65,6 +65,9 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: rgb(10, 10, 10);
+    position: relative;
+    
+    z-index: 2;
 }
 
 .hero .hero-text h1 {
@@ -258,4 +261,34 @@ footer .social-icons a:hover {
     margin-top: 10px;
 }
 
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta as bolinhas fora da área visível */
+    width: 300px; /* Largura da área visível (ajuste conforme necessário) */
+    margin: 20px auto;
+    position: relative;
+}
 
+.carousel-bullets {
+    display: flex;
+    transition: transform 1s ease;
+    will-change: transform;
+}
+
+.bullet {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px; /* Espaçamento entre as bolinhas */
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.bullet i {
+    color: #333; /* Cor do ícone */
+}
